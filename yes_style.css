@@ -22,3 +22,54 @@ body {
     max-width: 500px; 
     height: auto; 
 }
+
+/* Center layout already exists — this styles only the button */
+
+.valentine-btn{
+    display:inline-block;
+    margin-top:30px;
+    padding:14px 36px;
+
+    font-size:18px;
+    font-weight:600;
+    text-decoration:none;
+    color:white;
+
+    background:linear-gradient(135deg,#ff4b6e,#ff8fa3);
+    border-radius:50px;
+
+    box-shadow:0 8px 20px rgba(255,75,110,.35);
+
+    transition:all .3s ease;
+}
+
+/* Hover glow + pulse */
+.valentine-btn:hover{
+    transform:scale(1.1);
+    box-shadow:0 12px 30px rgba(255,75,110,.6);
+    animation:pulse 0.8s infinite;
+}
+
+/* Click press */
+.valentine-btn:active{
+    transform:scale(0.95);
+}
+
+/* Pulse animation */
+@keyframes pulse{
+    0%{transform:scale(1.1);}
+    50%{transform:scale(1.18);}
+    100%{transform:scale(1.1);}
+}
+
+
+
+
+
+
+
+
+
+
+
+
